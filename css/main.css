@@ -1,1 +1,76 @@
-*{-webkit-transition:all 400ms;-moz-transition:all 400ms;-o-transition:all 400ms;transition:all 400ms}html{background:url('../img/bg.jpg') no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}body{font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight:300}a{text-decoration:none;color:#fff;font-weight:100}img{display:block;width:80%;height:auto;margin:0 auto}#main{width:300px;margin:0 auto;text-align:center;padding-top:17%}#title{padding:0 0 25px 0;border-bottom:1px solid #fff;margin:0 0 15px 0;opacity:.8;text-align:left;line-height:70px}#title h1{font-family:'HelveticaNeue-UltraLight','Helvetica Neue UltraLight';font-size:5em;padding:0;margin:0;font-weight:100;color:#fff}#jobs img{opacity:.4;padding:15px 0}#jobs img:hover{opacity:1}#jobs img#tablelist{width:95%}#jobs img#happier{width:55%;padding-bottom:5px}#social{margin-top:80px;padding-bottom:50px}#social a{display:inline-block;padding:8px;opacity:.4}#social a:hover{opacity:1}
+* {
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+}
+html {
+  background: url('../img/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+}
+img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+#main {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 8%;
+}
+#title {
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid #fff;
+  margin: 0 0 15px 0;
+  opacity: 0.8;
+  text-align: left;
+  line-height: 70px;
+}
+#title h1 {
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight';
+  font-size: 5em;
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  color: #fff;
+}
+#jobs img {
+  opacity: 0.4;
+  padding: 15px 0;
+}
+#jobs img:hover {
+  opacity: 1.0;
+}
+#jobs img#tablelist {
+  width: 95%;
+}
+#jobs img#happier {
+  width: 55%;
+  padding-bottom: 5px;
+}
+#social {
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+#social a {
+  display: inline-block;
+  padding: 8px;
+  opacity: 0.4;
+}
+#social a:hover {
+  opacity: 1.0;
+}
