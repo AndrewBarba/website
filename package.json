@@ -8,16 +8,12 @@
     "node": "4.4.5"
   },
   "dependencies": {
-    "compression": "1.6.1",
     "express": "4.13.4",
     "forky": "0.3.0",
     "less": "2.6.1",
     "less-plugin-autoprefix": "1.5.1",
     "less-plugin-clean-css": "1.5.1",
     "serve-static": "1.10.2"
-  },
-  "devDependencies": {
-    "gulp": "3.9.1"
   },
   "scripts": {
     "start": "node server-cluster",
