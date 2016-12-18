@@ -1,17 +1,6 @@
-
-* {
-	-webkit-transition: all 400ms;
-	   -moz-transition: all 400ms;
-	     -o-transition: all 400ms;
-	        transition: all 400ms;
-}
-
 html {
 	background: url('/img/bg.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+	background-size: cover;
 }
 
 body {
@@ -25,18 +14,11 @@ a {
 	font-weight: 100;
 }
 
-img {
-	display: block;
-	width: 80%;
-	height: auto;
-	margin: 0 auto;
-}
-
 #main {
 	width: 300px;
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 8%;
+	padding-top: 40px;
 }
 
 #title {
@@ -48,8 +30,9 @@ img {
 	line-height: 70px;
 
 	h1 {
-		font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight';
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 		font-size: 5em;
+		line-height: 1.025em;
 		padding: 0;
 		margin: 0;
 		font-weight: 100;
@@ -60,20 +43,15 @@ img {
 #jobs {
 
 	img {
-		opacity: 0.4;
-		padding: 15px 0;
+		display: block;
+		opacity: 0.5;
+		margin: 25px 0;
+		height: auto;
+		width: 100%;
+		transition: opacity 400ms;
 		&:hover {
 			opacity: 1.0;
 		}
-	}
-
-	img#tablelist {
-		width: 95%;
-	}
-
-	img#happier {
-		width: 55%;
-		padding-bottom: 5px;
 	}
 }
 
