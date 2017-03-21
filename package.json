@@ -5,15 +5,15 @@
   "url": "https://www.abarba.me",
   "author": "Andrew Barba",
   "engines": {
-    "node": "6.9.2"
+    "node": "6.10.0"
   },
   "dependencies": {
-    "express": "4.14.0",
+    "express": "4.15.2",
     "forky": "0.3.0",
-    "less": "2.7.1",
+    "less": "2.7.2",
     "less-plugin-autoprefix": "1.5.1",
     "less-plugin-clean-css": "1.5.1",
-    "serve-static": "1.11.1"
+    "serve-static": "1.12.1"
   },
   "scripts": {
     "start": "node server-cluster",
