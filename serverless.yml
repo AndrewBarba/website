@@ -1,0 +1,16 @@
+service: abarba.me
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  memorySize: 512
+  timeout: 10
+  versionFunctions: false
+
+functions:
+  web:
+    handler: lambda.handler
+    events:
+      - http:
+          path: /
+          method: get

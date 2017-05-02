@@ -11,3 +11,6 @@ css:
 
 updates:
 	npm outdated --depth 0
+
+deploy:
+	./node_modules/serverless/bin/serverless deploy --stage prod
