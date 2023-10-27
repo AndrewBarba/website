@@ -124,7 +124,7 @@ export default function Home() {
       <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex mb-4 mt-10">
         <Products products={products} />
       </div>
-      <div className="z-10 max-w-5xl w-full items-center space-x-10 text-sm lg:flex mt-10">
+      <div className="z-10 max-w-5xl w-full items-center space-x-10 text-sm lg:flex mt-10 pb-10">
 				<a href="https://www.github.com/AndrewBarba">github</a>
 				<a href="https://docs.google.com/document/d/1aHs4peKIfoUQZDuPOnp5W0QB9h24hpUJRjNhKI5hPDE/edit?usp=sharing">resume</a>
 				<a href="https://www.linkedin.com/in/andrewbarba">linkedin</a>
