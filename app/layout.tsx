@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Handlee } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 
 const handlee = Handlee({
@@ -22,7 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={handlee.variable}>
-      <body className='font-sans'>{children}</body>
+      <body className='font-sans'>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
