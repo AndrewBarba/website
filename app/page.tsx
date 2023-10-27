@@ -108,6 +108,12 @@ const products: Product[] = [
     product: "Lunara Capital",
     date: "2020-present",
     description: "Automated trading"
+  },
+  {
+    profit: "—",
+    product: "Vercel",
+    date: "2023-present",
+    description: "Frontend cloud"
   }
 ]
 
