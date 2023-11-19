@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    {"from": "/httpbin/:path*", "to": "https://httpbin.org/:path*"}
+    {
+      "source": "/httpbin/:path*", 
+      "destination": "https://httpbin.org/:path*"
+    }
   ]
 }
