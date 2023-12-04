@@ -1,8 +1,19 @@
 {
   "rewrites": [
     {
-      "source": "/httpbin/:path*", 
-      "destination": "https://httpbin.org/:path*"
+      "source": "/vercel-files/:path*",
+      "destination": "https://pick-n-shovel.s3.amazonaws.com/vercel-files/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/vercel-files/(.*)",
+      "headers": [
+        {
+          "key": "cdn-cache-control",
+          "value": "public, max-age=86400, s-maxage=86400, stale-while-revalidate=86400"
+        }
+      ]
     }
   ]
 }
