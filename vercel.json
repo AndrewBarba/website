@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "(.*)",
-      "destination": "/",
+      "destination": "https://error.com",
       "statusCode": 429,
       "has": [
         {
