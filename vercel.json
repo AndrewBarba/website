@@ -3,7 +3,7 @@
     {
       "source": "(.*)",
       "destination": "https://test.com",
-      "statusCode": 429,
+      "statusCode": 307,
       "has": [
         {
           "type": "header",
