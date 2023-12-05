@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "(.*)",
+      "statusCode": 429,
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "bytespider"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/vercel-files/:path*",
