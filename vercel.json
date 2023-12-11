@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/((?!_next|401).*)",
-      "destination": "/401",
+      "source": "/(.*)",
+      "destination": "https://test.com",
       "permanent": false,
       "has": [
         {
