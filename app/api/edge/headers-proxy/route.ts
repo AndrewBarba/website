@@ -11,5 +11,5 @@ export async function GET(req: Request) {
   if (!res.ok) {
     return new Response('Failed to fetch headers', { status: 500 })
   }
-  return res
+  return Response.json(await res.json())
 }
