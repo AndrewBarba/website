@@ -2,8 +2,8 @@
   "build": {
     "env": {
       "VERCEL_DEBUG": "1",
-      "VERCEL_EDGE_FUNCTIONS_BRIDGE_PKG": "https://edge-functions-bridge-01-nextjs-middleware-g7jpnfpid.vercel.app/edge.tgz",
-      "VERCEL_NODE_BRIDGE_PKG": "https://edge-functions-bridge-01-nextjs-middleware-g7jpnfpid.vercel.app/node.tgz"
+      "VERCEL_EDGE_FUNCTIONS_BRIDGE_PKG": "https://edge-functions-bridge-01-nextjs-middleware-kcxadc7k7.vercel.app/edge.tgz",
+      "VERCEL_NODE_BRIDGE_PKG": "https://edge-functions-bridge-01-nextjs-middleware-kcxadc7k7.vercel.app/node.tgz"
     }
   },
   "redirects": [
