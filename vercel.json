@@ -1,11 +1,4 @@
 {
-  "build": {
-    "env": {
-      "VERCEL_DEBUG": "1",
-      "VERCEL_EDGE_FUNCTIONS_BRIDGE_PKG": "https://edge-functions-bridge-01-nextjs-middleware-kcxadc7k7.vercel.app/edge.tgz",
-      "VERCEL_NODE_BRIDGE_PKG": "https://edge-functions-bridge-01-nextjs-middleware-kcxadc7k7.vercel.app/node.tgz"
-    }
-  },
   "redirects": [
     {
       "source": "/(.*)",
@@ -32,7 +25,7 @@
       "headers": [
         {
           "key": "cdn-cache-control",
-          "value": "public, max-age=86400, s-maxage=86400, stale-while-revalidate=86400"
+          "value": "max-age=1, stale-while-revalidate=60"
         }
       ]
     }
