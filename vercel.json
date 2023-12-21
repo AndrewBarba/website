@@ -1,7 +1,8 @@
 {
   "build": {
     "env": {
-      "VERCEL_DEBUG": "1"
+      "VERCEL_DEBUG": "1",
+      "VERCEL_USE_NODE_BRIDGE_PRIVATE_LATEST": "1"
     }
   },
   "redirects": [
