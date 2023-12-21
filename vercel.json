@@ -1,4 +1,9 @@
 {
+  "build": {
+    "env": {
+      "VERCEL_DEBUG": "1"
+    }
+  },
   "redirects": [
     {
       "source": "/(.*)",
