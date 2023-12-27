@@ -12,7 +12,7 @@ export function Products(props: { products: Product[] }) {
     <Table className="table-auto border-collapse w-full border border-dashed border-gray-500">
       <TableHeader>
         <TableRow className="text-left border-b border-dashed border-gray-500">
-          <TableHead className="px-4 py-3">Profit</TableHead>
+          <TableHead className="px-4 py-3">Outcome</TableHead>
           <TableHead className="px-4 py-3">Product</TableHead>
           <TableHead className="px-4 py-3">Date</TableHead>
           <TableHead className="px-4 py-3">Description</TableHead>

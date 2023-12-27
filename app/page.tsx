@@ -1,16 +1,70 @@
 import { Products, Product } from '@/components/products'
 
-const products: Product[] = [
+const fullTime: Product[] = [
+  {
+    profit: "FAIL",
+    product: "Tablelist",
+    date: "2013-2017",
+    description: "OpenTable for nightlife"
+  },
+  {
+    profit: "Success",
+    product: "Barstool Sports",
+    date: "2017-2023",
+    description: "Media pirate ship"
+  },
+  {
+    profit: "—",
+    product: "Vercel",
+    date: "2023-present",
+    description: "Frontend cloud"
+  }
+]
+
+const advisor: Product[] = [
+  {
+    profit: "FAIL",
+    product: "Fritz",
+    date: "2017-2022",
+    description: "Machine learning analytics"
+  },
+  {
+    profit: "--",
+    product: "FoxyAI",
+    date: "2021-present",
+    description: "Visual property intelligence"
+  },
+  {
+    profit: "--",
+    product: "CheersCash",
+    date: "2022-present",
+    description: "Gamifying your favorite brands"
+  },
+  {
+    profit: "--",
+    product: "Trio",
+    date: "2023-present",
+    description: "For artists, fans, and creators"
+  },
+  {
+    profit: "--",
+    product: "Activate",
+    date: "2023-present",
+    description: "Your equipment workflow on autopilot"
+  }
+]
+
+const personal: Product[] = [
   {
     profit: "FAIL",
     product: "Pupploads",
-    date: "2011-2011",
+    date: "2011",
     description: "Dog photo sharing"
   },
   {
     profit: "FAIL",
     product: "Torch",
-    date: "2011-2011",
+    date: "2011",
     description: "Flashlight for iPhone"
   },
   {
@@ -21,12 +75,6 @@ const products: Product[] = [
   },
   {
     profit: "FAIL",
-    product: "Happier",
-    date: "2012-2013",
-    description: "New social network"
-  },
-  {
-    profit: "FAIL",
     product: "Mongolytics",
     date: "2015-2017",
     description: "Looker for mongodb"
@@ -34,7 +82,7 @@ const products: Product[] = [
   {
     profit: "FAIL",
     product: "Samplr",
-    date: "2015-2015",
+    date: "2015",
     description: "Meals as a service"
   },
   {
@@ -46,20 +94,14 @@ const products: Product[] = [
   {
     profit: "FAIL",
     product: "Face to Face",
-    date: "2016-2016",
+    date: "2016",
     description: "iMessage Group FaceTime"
   },
   {
     profit: "FAIL",
     product: "Is My App Live",
-    date: "2017-2017",
+    date: "2017",
     description: "App Store release tracker"
-  },
-  {
-    profit: "FAIL",
-    product: "Tablelist",
-    date: "2013-2017",
-    description: "OpenTable for nightlife"
   },
   {
     profit: "Success",
@@ -86,12 +128,6 @@ const products: Product[] = [
     description: "Printable placecards"
   },
   {
-    profit: "Success",
-    product: "Barstool Sports",
-    date: "2017-2023",
-    description: "Media pirate ship"
-  },
-  {
     profit: "FAIL",
     product: "Swift Cloud",
     date: "2022-2023",
@@ -108,34 +144,56 @@ const products: Product[] = [
     product: "Lunara Capital",
     date: "2020-present",
     description: "Automated trading"
-  },
-  {
-    profit: "—",
-    product: "Vercel",
-    date: "2023-present",
-    description: "Frontend cloud"
   }
 ]
 
+const intern: Product[] = [
+  {
+    profit: "Success",
+    product: "WhatsApp",
+    date: "2012",
+    description: "Message privately"
+  },
+  {
+    profit: "FAIL",
+    product: "Happier",
+    date: "2013",
+    description: "Your well being matters"
+  }
+]
+
+export function Section(props: { title: string, products: Product[] }) {
+  return (
+    <>
+      <div className="z-10 max-w-5xl w-full items-center justify-between text-2xl lg:flex pt-10">
+        <h2>{props.title}</h2>
+      </div>
+      <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex pt-4">
+        <Products products={props.products.toReversed()} />
+      </div>
+    </>
+  )
+}
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-4">
-      <div className="z-10 max-w-5xl w-full items-center justify-between text-4xl lg:flex mb-4 mt-10">
+    <main className="flex min-h-screen flex-col items-center p-4 pb-20">
+      <div className="z-10 max-w-5xl w-full items-center justify-between text-4xl lg:flex pb-4 pt-10">
         <h1>Andrew Barba</h1>
       </div>
-      <div className="z-10 max-w-5xl w-full items-center justify-between text-md lg:flex mb-4">
-        <h1>Coding is a lot like skateboarding - you&apos;ll fall far more often than you&apos;ll land.</h1>
+      <div className="z-10 max-w-5xl w-full items-center justify-between text-md lg:flex pb-4">
+        <p>Coding is a lot like skateboarding - you&apos;ll fall far more often than you&apos;ll land.</p>
       </div>
-      <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex mb-4 mt-10">
-        <Products products={products} />
-      </div>
-      <div className="z-10 max-w-5xl w-full items-center space-x-10 text-sm lg:flex mt-10 pb-10">
+      <div className="z-10 max-w-5xl w-full items-center space-x-5 text-sm lg:flex underline">
 				<a href="https://www.github.com/AndrewBarba">github</a>
 				<a href="https://docs.google.com/document/d/1aHs4peKIfoUQZDuPOnp5W0QB9h24hpUJRjNhKI5hPDE/edit?usp=sharing">resume</a>
 				<a href="https://www.linkedin.com/in/andrewbarba">linkedin</a>
 				<a href="https://www.twitter.com/andrew_barba">twitter</a>
 			</div>
+      <Section title="Full Time" products={fullTime} />
+      <Section title="Advisor" products={advisor} />
+      <Section title="Projects" products={personal} />
+      <Section title="Intern" products={intern} />
     </main>
   )
 }
