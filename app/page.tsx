@@ -156,7 +156,7 @@ const intern: Product[] = [
   }
 ]
 
-export function Section(props: { title: string, products: Product[] }) {
+function Section(props: { title: string, products: Product[] }) {
   return (
     <>
       <div className="z-10 max-w-5xl w-full items-center justify-between text-2xl lg:flex pt-10">
