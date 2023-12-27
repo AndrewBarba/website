@@ -54,7 +54,7 @@ const advisor: Product[] = [
   }
 ]
 
-const personal: Product[] = [
+const projects: Product[] = [
   {
     profit: "FAIL",
     product: "Pupploads",
@@ -122,9 +122,9 @@ const personal: Product[] = [
     description: "Printable placecards"
   },
   {
-    profit: "FAIL",
+    profit: "-",
     product: "Swift Cloud",
-    date: "2022-2023",
+    date: "2022-present",
     description: "Simple server side Swift"
   },
   {
@@ -186,7 +186,7 @@ export default function Home() {
 			</div>
       <Section title="Full Time" products={fullTime} />
       <Section title="Advisor" products={advisor} />
-      <Section title="Projects" products={personal} />
+      <Section title="Projects" products={projects} />
       <Section title="Intern" products={intern} />
     </main>
   )
