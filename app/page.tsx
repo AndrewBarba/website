@@ -36,15 +36,15 @@ const advisor: Product[] = [
   },
   {
     outcome: "--",
-    product: "CheersCash",
+    product: "Cheers Cash",
     date: "2022-present",
-    description: "Gamifying your favorite brands"
+    description: "Gamifying your brands"
   },
   {
     outcome: "--",
     product: "PlanetScale",
     date: "2023-present",
-    description: "The most advanced MySQL platform"
+    description: "Advanced MySQL platform"
   },
   {
     outcome: "--",
@@ -56,7 +56,7 @@ const advisor: Product[] = [
     outcome: "--",
     product: "Activate",
     date: "2023-present",
-    description: "Your equipment workflow on autopilot"
+    description: "Equipment workflow on autopilot"
   }
 ]
 
@@ -165,10 +165,10 @@ const intern: Product[] = [
 function Section(props: { title: string, products: Product[] }) {
   return (
     <>
-      <div className="z-10 max-w-5xl w-full items-center justify-between text-2xl lg:flex pt-10">
+      <div className="z-10 w-full items-center justify-between text-2xl lg:flex pt-10">
         <h2>{props.title}</h2>
       </div>
-      <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex pt-4">
+      <div className="z-10 w-full items-center justify-between text-sm lg:flex pt-4">
         <Products products={props.products.toReversed()} />
       </div>
     </>
@@ -178,22 +178,24 @@ function Section(props: { title: string, products: Product[] }) {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 pb-20">
-      <div className="z-10 max-w-5xl w-full items-center justify-between text-4xl lg:flex pb-4 pt-10">
-        <h1>Andrew Barba</h1>
+      <div className="w-full max-w-4xl">
+        <div className="z-10 w-full items-center justify-between text-4xl lg:flex pb-4 pt-10">
+          <h1>Andrew Barba</h1>
+        </div>
+        <div className="z-10 w-full items-center justify-between text-md lg:flex pb-4">
+          <p>Coding is a lot like skateboarding - you&apos;ll fall far more often than you&apos;ll land.</p>
+        </div>
+        <div className="z-10 w-full items-center space-x-5 text-sm lg:flex underline">
+          <a href="https://www.github.com/AndrewBarba">github</a>
+          <a href="https://docs.google.com/document/d/1aHs4peKIfoUQZDuPOnp5W0QB9h24hpUJRjNhKI5hPDE/edit?usp=sharing">resume</a>
+          <a href="https://www.linkedin.com/in/andrewbarba">linkedin</a>
+          <a href="https://www.twitter.com/andrew_barba">twitter</a>
+        </div>
+        <Section title="Full Time" products={fullTime} />
+        <Section title="Advisor" products={advisor} />
+        <Section title="Projects" products={projects} />
+        <Section title="Intern" products={intern} />
       </div>
-      <div className="z-10 max-w-5xl w-full items-center justify-between text-md lg:flex pb-4">
-        <p>Coding is a lot like skateboarding - you&apos;ll fall far more often than you&apos;ll land.</p>
-      </div>
-      <div className="z-10 max-w-5xl w-full items-center space-x-5 text-sm lg:flex underline">
-				<a href="https://www.github.com/AndrewBarba">github</a>
-				<a href="https://docs.google.com/document/d/1aHs4peKIfoUQZDuPOnp5W0QB9h24hpUJRjNhKI5hPDE/edit?usp=sharing">resume</a>
-				<a href="https://www.linkedin.com/in/andrewbarba">linkedin</a>
-				<a href="https://www.twitter.com/andrew_barba">twitter</a>
-			</div>
-      <Section title="Full Time" products={fullTime} />
-      <Section title="Advisor" products={advisor} />
-      <Section title="Projects" products={projects} />
-      <Section title="Intern" products={intern} />
     </main>
   )
 }
