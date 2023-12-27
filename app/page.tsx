@@ -14,7 +14,7 @@ const fullTime: Product[] = [
     description: "Media pirate ship"
   },
   {
-    profit: "—",
+    profit: "—-",
     product: "Vercel",
     date: "2023-present",
     description: "Frontend cloud"
@@ -122,19 +122,19 @@ const projects: Product[] = [
     description: "Printable placecards"
   },
   {
-    profit: "-",
+    profit: "--",
     product: "Swift Cloud",
     date: "2022-present",
     description: "Simple server side Swift"
   },
   {
-    profit: "—",
+    profit: "—-",
     product: "Helios CRM",
     date: "2022-present",
     description: "SMS marketing"
   },
   {
-    profit: "—",
+    profit: "—-",
     product: "Lunara Capital",
     date: "2020-present",
     description: "Automated trading"
