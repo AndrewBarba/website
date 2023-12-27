@@ -24,8 +24,8 @@ const fullTime: Product[] = [
 const advisor: Product[] = [
   {
     profit: "FAIL",
-    product: "Fritz",
-    date: "2017-2022",
+    product: "Fritz.ai",
+    date: "2017-2021",
     description: "Machine learning analytics"
   },
   {
@@ -108,12 +108,6 @@ const personal: Product[] = [
     product: "PTDefender",
     date: "2017-2018",
     description: "Add-on for ProfitTrailer"
-  },
-  {
-    profit: "FAIL",
-    product: "Fritz.ai",
-    date: "2017-2020",
-    description: "AI/ML analytics"
   },
   {
     profit: "FAIL",
