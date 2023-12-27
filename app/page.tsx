@@ -2,19 +2,19 @@ import { Products, Product } from '@/components/products'
 
 const fullTime: Product[] = [
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "Tablelist",
     date: "2013-2017",
     description: "OpenTable for nightlife"
   },
   {
-    profit: "Success",
+    outcome: "Success",
     product: "Barstool Sports",
     date: "2017-2023",
     description: "Media pirate ship"
   },
   {
-    profit: "--",
+    outcome: "--",
     product: "Vercel",
     date: "2023-present",
     description: "Frontend cloud"
@@ -23,31 +23,37 @@ const fullTime: Product[] = [
 
 const advisor: Product[] = [
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "Fritz.ai",
     date: "2017-2021",
     description: "Machine learning analytics"
   },
   {
-    profit: "--",
+    outcome: "--",
     product: "FoxyAI",
     date: "2021-present",
     description: "Visual property intelligence"
   },
   {
-    profit: "--",
+    outcome: "--",
     product: "CheersCash",
     date: "2022-present",
     description: "Gamifying your favorite brands"
   },
   {
-    profit: "--",
+    outcome: "--",
+    product: "PlanetScale",
+    date: "2023-present",
+    description: "The most advanced MySQL platform"
+  },
+  {
+    outcome: "--",
     product: "Trio",
     date: "2023-present",
     description: "For artists, fans, and creators"
   },
   {
-    profit: "--",
+    outcome: "--",
     product: "Activate",
     date: "2023-present",
     description: "Your equipment workflow on autopilot"
@@ -56,85 +62,85 @@ const advisor: Product[] = [
 
 const projects: Product[] = [
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "Pupploads",
     date: "2011",
     description: "Dog photo sharing"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "Torch",
     date: "2011",
     description: "Flashlight for iPhone"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "joox.fm",
     date: "2011-2014",
     description: "Social music streaming"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "Mongolytics",
     date: "2015-2017",
     description: "Looker for mongodb"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "Samplr",
     date: "2015",
     description: "Meals as a service"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "TTime",
     date: "2015-2016",
     description: "MBTA subway tracker"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "Face to Face",
     date: "2016",
     description: "iMessage Group FaceTime"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "Is My App Live",
     date: "2017",
     description: "App Store release tracker"
   },
   {
-    profit: "Success",
+    outcome: "Success",
     product: "PTDefender",
     date: "2017-2018",
     description: "Add-on for ProfitTrailer"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "GuestPlease",
     date: "2020-2021",
     description: "Connect guests & podcasts"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "DIY Placecards",
     date: "2020-2021",
     description: "Printable placecards"
   },
   {
-    profit: "--",
+    outcome: "--",
     product: "Swift Cloud",
     date: "2022-present",
     description: "Simple server side Swift"
   },
   {
-    profit: "--",
+    outcome: "--",
     product: "Helios CRM",
     date: "2022-present",
     description: "SMS marketing"
   },
   {
-    profit: "--",
+    outcome: "--",
     product: "Lunara Capital",
     date: "2020-present",
     description: "Automated trading"
@@ -143,13 +149,13 @@ const projects: Product[] = [
 
 const intern: Product[] = [
   {
-    profit: "Success",
+    outcome: "Success",
     product: "WhatsApp",
     date: "2012",
     description: "Message privately"
   },
   {
-    profit: "FAIL",
+    outcome: "FAIL",
     product: "Happier",
     date: "2013",
     description: "Your well being matters"
