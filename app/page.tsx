@@ -128,13 +128,13 @@ const projects: Product[] = [
     description: "Simple server side Swift"
   },
   {
-    profit: "—-",
+    profit: "--",
     product: "Helios CRM",
     date: "2022-present",
     description: "SMS marketing"
   },
   {
-    profit: "—-",
+    profit: "--",
     product: "Lunara Capital",
     date: "2020-present",
     description: "Automated trading"
