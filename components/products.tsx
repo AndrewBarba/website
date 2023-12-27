@@ -1,7 +1,7 @@
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 
 export type Product = {
-  profit: string
+  profit: 'Success' | 'FAIL' | '--'
   product: string
   date: string
   description: string

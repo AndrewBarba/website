@@ -14,7 +14,7 @@ const fullTime: Product[] = [
     description: "Media pirate ship"
   },
   {
-    profit: "—-",
+    profit: "--",
     product: "Vercel",
     date: "2023-present",
     description: "Frontend cloud"
