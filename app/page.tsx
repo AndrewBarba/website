@@ -48,12 +48,6 @@ const advisor: Product[] = [
   },
   {
     outcome: "--",
-    product: "Trio",
-    date: "2023-present",
-    description: "For artists, fans, and creators"
-  },
-  {
-    outcome: "--",
     product: "Activate",
     date: "2023-present",
     description: "Equipment workflow on autopilot"
