@@ -17,6 +17,17 @@
           "value": ".*bytespider.*"
         }
       ]
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://test.com",
+      "permanent": false,
+      "has": [
+        {
+          "type": "ip_address",
+          "value": "127.0.0.1"
+        }
+      ]
     }
   ],
   "rewrites": [
