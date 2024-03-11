@@ -1,10 +1,4 @@
 {
-  "build": {
-    "env": {
-      "VERCEL_DEBUG": "1",
-      "VERCEL_USE_NODE_BRIDGE_PRIVATE_LATEST": "1"
-    }
-  },
   "redirects": [
     {
       "source": "/(.*)",
@@ -17,17 +11,6 @@
           "value": ".*bytespider.*"
         }
       ]
-    },
-    {
-      "source": "/(.*)",
-      "destination": "https://test.com",
-      "permanent": false,
-      "has": [
-        {
-          "type": "ip_address",
-          "value": "127.0.0.1"
-        }
-      ]
     }
   ],
   "rewrites": [
@@ -37,6 +20,22 @@
     }
   ],
   "headers": [
+    {
+      "source": "/(.*)",
+      "missing": [
+        {
+          "type": "header",
+          "key": "cookie",
+          "value": ".*_vercel_debug_request_challenge_version.*"
+        }
+      ],
+      "headers": [
+        {
+          "key": "set-cookie",
+          "value": "_vercel_debug_request_challenge_version=2; Expires=Thu, 31 Dec 2099 23:59:59 GMT; Path=/; HttpOnly"
+        }
+      ]
+    },
     {
       "source": "/vercel-files/(.*)",
       "headers": [
