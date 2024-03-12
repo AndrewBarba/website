@@ -1,49 +1,33 @@
 {
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "https://test.com",
-      "permanent": false,
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": ".*bytespider.*"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/vercel-files/:path*",
-      "destination": "https://pick-n-shovel.s3.amazonaws.com/vercel-files/:path*"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "missing": [
-        {
-          "type": "header",
-          "key": "cookie",
-          "value": ".*_vercel_debug_request_challenge_version.*"
-        }
-      ],
-      "headers": [
-        {
-          "key": "set-cookie",
-          "value": "_vercel_debug_request_challenge_version=2; Expires=Thu, 31 Dec 2099 23:59:59 GMT; Path=/; HttpOnly"
-        }
-      ]
-    },
-    {
-      "source": "/vercel-files/(.*)",
-      "headers": [
-        {
-          "key": "cdn-cache-control",
-          "value": "max-age=5, stale-while-revalidate=300"
-        }
-      ]
-    }
-  ]
+	"redirects": [
+		{
+			"source": "/(.*)",
+			"destination": "https://test.com",
+			"permanent": false,
+			"has": [
+				{
+					"type": "header",
+					"key": "user-agent",
+					"value": ".*bytespider.*"
+				}
+			]
+		}
+	],
+	"rewrites": [
+		{
+			"source": "/vercel-files/:path*",
+			"destination": "https://pick-n-shovel.s3.amazonaws.com/vercel-files/:path*"
+		}
+	],
+	"headers": [
+		{
+			"source": "/vercel-files/(.*)",
+			"headers": [
+				{
+					"key": "cdn-cache-control",
+					"value": "max-age=5, stale-while-revalidate=300"
+				}
+			]
+		}
+	]
 }
