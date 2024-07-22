@@ -1,8 +1,11 @@
-export const runtime = 'edge'
-export const dynamic = 'force-dynamic'
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
-export async function GET(req: Request) { 
-  return Response.json({ 
-    headers: Array.from(req.headers.entries()).reduce((acc, [key, value]) => ({ ...acc, [key]: value }), {})
-  })
+export async function GET(req: Request) {
+	return Response.json({
+		headers: Array.from(req.headers.entries()).reduce(
+			(acc, [key, value]) => ({ ...acc, [key]: value }),
+			{},
+		),
+	});
 }

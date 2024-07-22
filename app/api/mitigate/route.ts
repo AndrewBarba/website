@@ -1,11 +1,14 @@
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
 
-export async function GET(req: Request) { 
-  return Response.json({ 
-    status: 'OK'
-  }, {
-    headers: {
-      'x-vercel-mitigate': 'challenge; ttl=600;'
-    }
-  })
+export async function GET(req: Request) {
+	return Response.json(
+		{
+			status: "OK",
+		},
+		{
+			headers: {
+				"x-vercel-mitigate": "challenge; ttl=600;",
+			},
+		},
+	);
 }
