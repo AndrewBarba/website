@@ -40,12 +40,12 @@ const advisor: Product[] = [
     date: "2022-present",
     description: "Gamifying your brands"
   },
-  {
-    outcome: "--",
-    product: "PlanetScale",
-    date: "2023-present",
-    description: "Advanced MySQL platform"
-  },
+  // {
+  //   outcome: "--",
+  //   product: "PlanetScale",
+  //   date: "2023-present",
+  //   description: "Advanced MySQL platform"
+  // },
   {
     outcome: "--",
     product: "Activate",
