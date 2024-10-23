@@ -188,7 +188,7 @@ export default function Home() {
 						resume
 					</a>
 					<a href="https://www.linkedin.com/in/andrewbarba">linkedin</a>
-					<a href="https://www.twitter.com/andrew_barba">twitter</a>
+					<a href="https://x.com/andrew_barba">&nbsp;&nbsp;𝕏&nbsp;&nbsp;</a>
 				</div>
 				<Section title="Full Time" products={fullTime} />
 				<Section title="Advisor" products={advisor} />
