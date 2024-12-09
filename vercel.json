@@ -17,6 +17,10 @@
 		{
 			"source": "/vercel-files/:path*",
 			"destination": "https://pick-n-shovel.s3.amazonaws.com/vercel-files/:path*"
+		},
+		{
+			"source": "/hackathon/:path*",
+			"destination": "https://pick-n-shovel.s3.amazonaws.com/hackathon/:path*"
 		}
 	],
 	"headers": [
@@ -26,6 +30,15 @@
 				{
 					"key": "cdn-cache-control",
 					"value": "max-age=5, stale-while-revalidate=300"
+				}
+			]
+		},
+		{
+			"source": "/hackathon/(.*)",
+			"headers": [
+				{
+					"key": "cdn-cache-control",
+					"value": "max-age=3600"
 				}
 			]
 		}
