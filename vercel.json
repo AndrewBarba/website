@@ -21,6 +21,10 @@
 		{
 			"source": "/hackathon/:path*",
 			"destination": "https://pick-n-shovel.s3.amazonaws.com/hackathon/:path*"
+		},
+		{
+			"source": "/_hackathon/:path*",
+			"destination": "https://pick-n-shovel.s3.amazonaws.com/hackathon/:path*"
 		}
 	],
 	"headers": [
