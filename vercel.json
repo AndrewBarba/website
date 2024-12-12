@@ -25,6 +25,10 @@
 		{
 			"source": "/_hackathon/:path*",
 			"destination": "https://pick-n-shovel.s3.amazonaws.com/hackathon/:path*"
+		},
+		{
+			"source": "/hackathon-vary",
+			"destination": "https://abarba.dev/api/origin-hackathon-vary"
 		}
 	],
 	"headers": [
