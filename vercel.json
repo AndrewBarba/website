@@ -56,6 +56,10 @@
 				{
 					"key": "vary",
 					"value": "user-agent"
+				},
+				{
+					"key": "cdn-cache-control",
+					"value": "max-age=3600"
 				}
 			]
 		}
