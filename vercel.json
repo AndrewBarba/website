@@ -28,7 +28,7 @@
 		},
 		{
 			"source": "/hackathon-vary",
-			"destination": "https://abarba.dev/api/origin-hackathon-vary"
+			"destination": "https://website-git-main-barba.vercel.app/api/origin-hackathon-vary"
 		}
 	],
 	"headers": [
