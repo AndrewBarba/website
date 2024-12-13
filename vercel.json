@@ -46,6 +46,19 @@
 			]
 		},
 		{
+			"source": "/hackathon/30mb.mp4",
+			"headers": [
+				{
+					"key": "cdn-cache-control",
+					"value": "max-age=3600"
+				},
+				{
+					"key": "surrogate-keys",
+					"value": "static"
+				}
+			]
+		},
+		{
 			"source": "/hackathon/(.*)",
 			"headers": [
 				{
