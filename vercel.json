@@ -40,7 +40,7 @@
 			"source": "/vercel-files/(.*)",
 			"headers": [
 				{
-					"key": "hackathon-cdn-cache-control",
+					"key": "cdn-cache-control",
 					"value": "max-age=5, stale-while-revalidate=300"
 				}
 			]
