@@ -13,7 +13,7 @@ export async function GET(req: Request) {
 		},
 		{
 			headers: {
-				"cdn-cache-control": "max-age=5",
+				"hackathon-cdn-cache-control": "max-age=5",
 			},
 		},
 	);
