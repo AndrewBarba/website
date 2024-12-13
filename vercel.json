@@ -62,7 +62,7 @@
 			"source": "/hackathon/(.*)",
 			"headers": [
 				{
-					"key": "hackathon-cdn-cache-control",
+					"key": "vercel-cached-cache-control",
 					"value": "max-age=3600"
 				},
 				{
@@ -79,7 +79,7 @@
 					"value": "user-agent"
 				},
 				{
-					"key": "hackathon-cdn-cache-control",
+					"key": "vercel-cached-cache-control",
 					"value": "max-age=3600"
 				}
 			]

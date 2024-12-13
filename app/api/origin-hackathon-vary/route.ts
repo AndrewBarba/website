@@ -14,7 +14,7 @@ export async function GET(req: Request) {
 		{
 			headers: {
 				vary: "user-agent",
-				"hackathon-cdn-cache-control": "max-age=3600",
+				"vercel-cached-cache-control": "max-age=3600",
 			},
 		},
 	);

@@ -13,7 +13,7 @@ export async function GET(req: Request) {
 		},
 		{
 			headers: {
-				"hackathon-cdn-cache-control": "max-age=5",
+				"vercel-cached-cache-control": "max-age=5",
 			},
 		},
 	);
