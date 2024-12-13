@@ -29,6 +29,10 @@
 		{
 			"source": "/hackathon-vary",
 			"destination": "https://website-git-main-barba.vercel.app/api/origin-hackathon-vary"
+		},
+		{
+			"source": "/hackathon-slow",
+			"destination": "https://website-git-main-barba.vercel.app/api/origin-hackathon-slow"
 		}
 	],
 	"headers": [
