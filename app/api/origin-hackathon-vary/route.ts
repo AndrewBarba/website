@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 export async function GET(req: Request) {
 	const requestId = randomUUID();
 	console.log(requestId, "Processing incoming request...");
-	await sleep(10_000);
+	await sleep(5_000);
 	console.log(requestId, "Processing complete.");
 	return Response.json(
 		{
