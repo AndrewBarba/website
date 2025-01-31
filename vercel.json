@@ -83,6 +83,15 @@
 					"value": "max-age=3600"
 				}
 			]
+		},
+		{
+			"source": "/api/origin-hackathon-vary",
+			"headers": [
+				{
+					"key": "vary",
+					"value": "user-agent"
+				}
+			]
 		}
 	]
 }
