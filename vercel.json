@@ -90,6 +90,10 @@
 				{
 					"key": "vary",
 					"value": "user-agent"
+				},
+				{
+					"key": "x-vary",
+					"value": "user-agent"
 				}
 			]
 		}
