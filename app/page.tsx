@@ -31,7 +31,7 @@ const advisor: Product[] = [
 	{
 		outcome: "--",
 		product: "FoxyAI",
-		date: "2021-present",
+		date: "2021-2024",
 		description: "Visual property intelligence",
 	},
 	{
