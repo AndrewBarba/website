@@ -47,10 +47,16 @@ const advisor: Product[] = [
 	//   description: "Advanced MySQL platform"
 	// },
 	{
-		outcome: "--",
+		outcome: "FAIL",
 		product: "Activate",
 		date: "2023-present",
 		description: "Equipment workflow on autopilot",
+	},
+	{
+		outcome: "--",
+		product: "Corner Of",
+		date: "2025-present",
+		description: "Own the room.",
 	},
 ];
 
